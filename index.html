@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-US" class=" js no-flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style="height: 100%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Jekyll v4.2.0">
+    <link type="application/atom+xml" rel="alternate" href="https://frida.re/feed.xml" title="Frida • A world-class dynamic instrumentation toolkit">
+    <link rel="alternate" type="application/atom+xml" title="Recent commits to Frida’s master branch" href="https://github.com/frida/frida/commits/master.atom">
+    <link rel="stylesheet" href="./index_files/screen.css">
+    <link rel="icon" type="image/png" href="https://frida.re/favicon.ico">
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+    <title>Frida • A world-class dynamic instrumentation toolkit | Observe and reprogram running programs on Windows, macOS, GNU/Linux, iOS, watchOS, tvOS, Android, FreeBSD, and QNX</title>
+    <meta name="generator" content="Jekyll v4.2.0">
+    <meta property="og:title" content="Frida • A world-class dynamic instrumentation toolkit">
+    <meta property="og:locale" content="en">
+    <meta name="description" content="Observe and reprogram running programs on Windows, macOS, GNU/Linux, iOS, watchOS, tvOS, Android, FreeBSD, and QNX">
+    <meta property="og:description" content="Observe and reprogram running programs on Windows, macOS, GNU/Linux, iOS, watchOS, tvOS, Android, FreeBSD, and QNX">
+    <link rel="canonical" href="https://frida.re/">
+    <meta property="og:url" content="https://frida.re/">
+    <meta property="og:site_name" content="Frida • A world-class dynamic instrumentation toolkit">
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:title" content="Frida • A world-class dynamic instrumentation toolkit">
+    <meta name="twitter:site" content="@fridadotre">
+    <script type="text/javascript" async="" src="./index_files/ga.js.下载"></script>
+    <script type="application/ld+json">
+        {"headline":"Frida • A world-class dynamic instrumentation toolkit","@type":"WebSite","description":"Observe and reprogram running programs on Windows, macOS, GNU/Linux, iOS, watchOS, tvOS, Android, FreeBSD, and QNX","name":"Frida • A world-class dynamic instrumentation toolkit","url":"https://frida.re/","@context":"https://schema.org"}</script>
+    <!-- End Jekyll SEO tag -->
+
+    <script src="./index_files/modernizr-2.5.3.min.js.下载"></script>
+    <script id="page-manipulator-event-target-creator" src="chrome-extension://mdhellggnoabbnnchkeniomkpghbekko/receiver.js"></script>
+    <span id="page-manipulator-event-target"></span>
+    <style type="text/css">
+        #_copy {
+            align-items: center;
+            background: #4494d5;
+            border-radius: 3px;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            font-size: 13px;
+            height: 30px;
+            justify-content: center;
+            position: absolute;
+            width: 60px;
+            z-index: 1000
+        }
+
+        #select-tooltip, #sfModal, .modal-backdrop, div[id^=reader-helper] {
+            display: none !important
+        }
+
+        .modal-open {
+            overflow: auto !important
+        }
+
+        ._sf_adjust_body {
+            padding-right: 0 !important
+        }
+
+        .super_copy_btns_div {
+            position: fixed;
+            width: 154px;
+            left: 10px;
+            top: 45%;
+            background: #e7f1ff;
+            border: 2px solid #4595d5;
+            font-weight: 600;
+            border-radius: 2px;
+            font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+            z-index: 5000
+        }
+
+        .super_copy_btns_logo {
+            width: 100%;
+            background: #4595d5;
+            text-align: center;
+            font-size: 12px;
+            color: #e7f1ff;
+            line-height: 30px;
+            height: 30px
+        }
+
+        .super_copy_btns_btn {
+            display: block;
+            width: 128px;
+            height: 28px;
+            background: #7f5711;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 12px;
+            border: 0;
+            outline: 0;
+            margin: 8px auto;
+            font-weight: 700;
+            cursor: pointer;
+            opacity: .9
+        }
+
+            .super_copy_btns_btn:hover {
+                opacity: .8
+            }
+
+            .super_copy_btns_btn:active {
+                opacity: 1
+            }
+    </style>
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="./index_files/translateelement.css">
+    <script type="text/javascript" charset="UTF-8" src="./index_files/m=el_main"></script>
+    <style type="text/css" id="SL_fix">
+        .goog-tooltip, .goog-tooltip:hover {
+            display: block !important;
+        }
+
+        .goog-text-highlight {
+            background-color: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+    </style>
+</head>
+
+
+<body class="wrap" style="position: relative; min-height: 100%; top: 0px;">
+    <div class="skiptranslate" style="display: none;"><iframe id=":0.container" class="goog-te-banner-frame skiptranslate" frameborder="0" src="javascript:&#39;&#39;" style="display: block !important;" src="./index_files/saved_resource.html"></iframe></div>
+    <header>
+        <nav class="mobile-nav show-on-mobiles">
+            <ul>
+                <li class="current">
+                    <a href="https://frida.re/">Overview</a>
+                </li>
+                <li class="">
+                    <a href="https://frida.re/docs/home/">Docs</a>
+                </li>
+                <li class="">
+                    <a href="https://frida.re/news/">News</a>
+                </li>
+                <li class="">
+                    <a href="https://github.com/frida/frida">Code</a>
+                </li>
+                <li class="">
+                    <a href="https://frida.re/contact/">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="grid">
+            <div class="logotype unit one-third center-on-mobiles">
+                <a href="https://frida.re/">
+                    <span>FЯIDA</span>
+                    <img src="./index_files/logotype.svg" width="205" height="39" alt="">
+                </a>
+            </div>
+            <nav class="main-nav unit two-thirds hide-on-mobiles">
+                <ul>
+                    <li class="current">
+                        <a href="https://frida.re/">Overview</a>
+                    </li>
+                    <li class="">
+                        <a href="https://frida.re/docs/home/">Docs</a>
+                    </li>
+                    <li class="">
+                        <a href="https://frida.re/news/">News</a>
+                    </li>
+                    <li class="">
+                        <a href="https://github.com/frida/frida">Code</a>
+                    </li>
+                    <li class="">
+                        <a href="https://frida.re/contact/">Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="intro">
+        <div class="grid">
+            <div class="unit whole center-on-mobiles">
+                <p class="first">Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.</p>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="grid">
+            <div class="unit one-quarter">
+                <h2>Scriptable</h2>
+                <p>
+                    Inject your own scripts into black box processes. Hook any function,
+                    spy on crypto APIs or trace private application code, no source code
+                    needed. Edit, hit save, and instantly see the results. All without
+                    compilation steps or program restarts.
+                </p>
+            </div>
+            <div class="unit one-quarter">
+                <h2>Portable</h2>
+                <p>
+                    Works on Windows, macOS, <a href="https://www.gnu.org/distros/">GNU/Linux</a>,
+                    iOS, watchOS, tvOS, Android, FreeBSD, and QNX. Install the Node.js
+                    bindings from <a href="https://www.npmjs.com/package/frida">npm</a>,
+                    grab a Python package from <a href="https://pypi.python.org/pypi/frida">PyPI</a>,
+                    or use Frida through its
+                    <a href="https://github.com/frida/frida/releases">Swift bindings</a>,
+                    <a href="https://github.com/frida/frida/releases">.NET bindings</a>,
+                    <a href="https://github.com/frida/frida/releases">Qt/Qml bindings</a>,
+                    <a href="https://github.com/frida/frida/releases">Go bindings</a>, or
+                    <a href="https://gist.github.com/oleavr/e6af8791adbef8fbde06">C API</a>.
+                    We also have a scalable <a href="https://frida.re/docs/footprint/">footprint</a>.
+                </p>
+            </div>
+            <div class="unit one-quarter">
+                <h2>Free</h2>
+                <p>
+                    Frida is and will always be <a href="https://www.gnu.org/philosophy/free-sw.en.html">free software</a>
+                    (free as in freedom). We want to empower the next generation of
+                    developer tools, and help other free software developers achieve
+                    interoperability through reverse engineering.
+                </p>
+            </div>
+            <div class="unit one-quarter">
+                <h2>Battle-tested</h2>
+                <p>
+                    We are proud that <a href="https://www.nowsecure.com/">NowSecure</a> is using
+                    Frida to do fast, deep analysis of mobile apps
+                    <a href="https://www.nowsecure.com/solutions/mobile-app-vetting/">at scale</a>.
+                    Frida has a comprehensive test-suite and has gone through years of
+                    rigorous testing across a broad range of use-cases.
+                </p>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+    <section class="quickstart">
+        <div class="grid">
+            <div class="unit golden-small center-on-mobiles">
+                <h4>Get up and running <em>in&nbsp;seconds</em>.</h4>
+            </div>
+            <div class="unit golden-large code">
+                <p class="title">Quick-start Instructions</p>
+                <div class="shell">
+                    <p class="line">
+                        <span class="path">~</span>
+                        <span class="prompt">$</span>
+                        <span class="command">pip install frida-tools</span>
+                    </p>
+                    <p class="line">
+                        <span class="path">~</span>
+                        <span class="prompt">$</span>
+                        <span class="command">frida-trace -i "recv*" Twitter</span>
+                    </p>
+                    <p class="line">
+                        <span class="output">recvfrom: Auto-generated handler: …/recvfrom.js</span>
+                    </p>
+                    <p class="line">
+                        <span class="output">Started tracing 21 functions.</span>
+                    </p>
+                    <p class="line">
+                        <span class="output">1442 ms&nbsp;&nbsp;&nbsp;&nbsp;recvfrom()</span>
+                    </p>
+                    <p class="line">
+                        <span class="output"># Live-edit recvfrom.js and watch the magic!</span>
+                    </p>
+                    <p class="line">
+                        <span class="output">5374 ms&nbsp;&nbsp;&nbsp;&nbsp;recvfrom(socket=67, buffer=0x252a618, length=65536, flags=0, address=0xb0420bd8, address_len=16)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="grid">
+            <div class="unit whole align-right center-on-mobiles">
+                <div class="sponsored-by">
+                    <h5>Sponsored by:</h5>
+                    <a href="https://www.nowsecure.com/">
+                        <img src="./index_files/nowsecure-logo.png" alt="NowSecure">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Google Analytics (http://google.com/analytics) -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-46880695-1']);
+        _gaq.push(['_setDomainName', 'https://frida.re']); // Multiple sub-domains
+        _gaq.push(['_setAllowLinker', true]); // Multiple TLDs
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+
+
+
+    <script type="text/javascript" class="skiptranslate">
+        function googleTrButton1661279357226228() {
+            var el = new google.translate.TranslateElement({
+                includedLanguages: "zh-CN",
+                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+                autoDisplay: false,
+                multilanguagePage: true,
+                floatPosition: 0
+            });
+            el.onTurnOffLanguageClick = function () {
+                var event = document.createEvent("Event");
+                event.initEvent("te_disable_lang", true, true);
+                document.body.dispatchEvent(event);
+            };
+            el.showBanner(false);
+        }</script><div id="goog-gt-tt" class="skiptranslate" dir="ltr" style="display: none;"><div style="padding: 8px;"><div><div class="logo"><img src="./index_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+    <script type="text/javascript" src="./index_files/element.js.下载"></script><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe frameborder="0" class="goog-te-menu-frame skiptranslate" title="语言翻译微件" style="visibility: visible; box-sizing: content-box; width: 110px; height: 35px; display: none;" src="./index_files/saved_resource(1).html"></iframe><iframe frameborder="0" class="goog-te-menu-frame skiptranslate" title="语言翻译微件" style="visibility: visible; box-sizing: content-box; width: 138px; height: 73px; display: none;" src="./index_files/saved_resource(2).html"></iframe>
+</body>
+</html>

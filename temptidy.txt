@@ -1,0 +1,146 @@
+R=1 C=1: Returning starttag node <title> stream
+
+>>>Enter prvTidyParseHTML-2826 with 'html', +++mode: 0, depth: 1, cnt: 1
+R=1 C=1: Returning lex-token node <title> lexer
+---prvTidyParseHTML-2838 got token 'title' with mode '0'.
+
+-->PUSH original: html @ 00000000003EA7B0
+         reentry: head @ 00000000003EDBF0
+     stack depth: 0 @ 00000000003E4D80
+            mode: 0
+      register 1: 0
+      register 2: 0
+
+<<<Exit prvTidyParseHTML-3092 with a node to parse: 'head', depth: 1
+
+>>>Enter prvTidyParseHead-2659 with 'head', +++mode: 0, depth: 1, cnt: 1
+R=1 C=1: Returning lex-token node <title> lexer
+
+-->PUSH original: head @ 00000000003EDBF0
+         reentry: title @ 00000000003E85E0
+     stack depth: 1 @ 00000000003E4DB0
+            mode: 0
+      register 1: 1
+      register 2: 0
+
+<<<Exit prvTidyParseHead-2766 with a node to parse: 'title', depth: 1
+R=1 C=8: Returning text TextNode [Foo]3 stream
+R=1 C=11: Returning endtag node <title> stream
+
+<--POP  original: head @ 00000000003EDBF0
+         reentry: title @ 00000000003E85E0
+     stack depth: 1 @ 00000000003E4DB0
+            mode: 0
+      register 1: 1
+      register 2: 0
+
+
+>>>Re-Enter prvTidyParseHead-2649 with 'title', +++mode: 0, depth: 1, cnt: 2
++++prvTidyParseHead-2655 Changing mode to 0 (was 0)
+R=1 C=19: Returning starttag node <img src="abc"> stream
+<<<Exit prvTidyParseHead-2775, depth: 1
+
+<--POP  original: html @ 00000000003EA7B0
+         reentry: head @ 00000000003EDBF0
+     stack depth: 0 @ 00000000003E4D80
+            mode: 0
+      register 1: 0
+      register 2: 0
+
+
+>>>Re-Enter prvTidyParseHTML-2817 with 'head', +++mode: 0, depth: 1, cnt: 2
++++prvTidyParseHTML-2822 Changing mode to 0 (was 0)
+R=1 C=19: Returning lex-token node <img src="abc"> lexer
+---prvTidyParseHTML-2838 got token 'img' with mode '0'.
+Before: HT20|HT32|H40S|H40T|H40F|H41S|H41T|H41F|X10S|X10T|X10F|XH11|XB10|----|HT50|XH50
+After : HT20|HT32|H40S|H40T|----|H41S|H41T|----|X10S|X10T|----|XH11|XB10|----|HT50|XH50
+
+-->PUSH original: html @ 00000000003EA7B0
+         reentry: none @ 0000000000000000
+     stack depth: 0 @ 00000000003E4D80
+            mode: 0
+      register 1: 0
+      register 2: 0
+
+<<<Exit prvTidyParseHTML-3117 with a node to parse: 'body', depth: 1
+
+>>>Enter prvTidyParseBody-1737 with 'body', +++mode: 0, depth: 1, cnt: 1
+R=1 C=19: Returning lex-token node <img src="abc"> lexer
+---prvTidyParseBody-1743 got token 'img' with mode '0'.
+After : HT20|HT32|----|H40T|----|----|H41T|----|----|X10T|----|XH11|XB10|----|HT50|XH50
++++prvTidyParseBody-2005 Changing mode to 1 (was 0)
+
+-->PUSH original: body @ 00000000003EDE80
+         reentry: img @ 00000000003EDD50
+     stack depth: 1 @ 00000000003E4DB0
+            mode: 1
+      register 1: 0
+      register 2: 0
+
+<<<Exit prvTidyParseBody-2032 with a node to parse: 'img', depth: 1
+
+<--POP  original: body @ 00000000003EDE80
+         reentry: img @ 00000000003EDD50
+     stack depth: 1 @ 00000000003E4DB0
+            mode: 1
+      register 1: 0
+      register 2: 0
+
+
+>>>Re-Enter prvTidyParseBody-1727 with 'img', +++mode: 0, depth: 1, cnt: 2
++++prvTidyParseBody-1733 Changing mode to 1 (was 0)
+R=1 C=34: Returning starttag node <meta content="key"> stream
+---prvTidyParseBody-1743 got token 'meta' with mode '1'.
++++prvTidyParseBody-2012 Changing mode to 0 (was 1)
+
+-->PUSH original: body @ 00000000003EDE80
+         reentry: meta @ 00000000003EDF30
+     stack depth: 1 @ 00000000003E4DB0
+            mode: 0
+      register 1: 1
+      register 2: 0
+
+<<<Exit prvTidyParseBody-2032 with a node to parse: 'meta', depth: 1
+
+<--POP  original: body @ 00000000003EDE80
+         reentry: meta @ 00000000003EDF30
+     stack depth: 1 @ 00000000003E4DB0
+            mode: 0
+      register 1: 1
+      register 2: 0
+
+
+>>>Re-Enter prvTidyParseBody-1727 with 'meta', +++mode: 0, depth: 1, cnt: 3
++++prvTidyParseBody-1733 Changing mode to 0 (was 0)
+Returning NULL...
+<<<Exit prvTidyParseBody-2040, depth: 1
+
+<--POP  original: html @ 00000000003EA7B0
+         reentry: none @ 0000000000000000
+     stack depth: 0 @ 00000000003E4D80
+            mode: 0
+      register 1: 0
+      register 2: 0
+
+Returning NULL...
+---ParseHTMLWithNode-1113 got token '(null)' with mode '0'.
+All nodes BEFORE clean and repair
+Root  
+ StartTag html implicit 
+  StartTag head implicit 
+   StartTag title  
+    Text   (3) 'Foo'
+  StartTag body implicit 
+   StartTag img   src="abc"
+   StartTag meta   content="key"
+All nodes AFTER clean and repair
+Root  
+ DocType   PUBLIC
+ StartTag html implicit 
+  StartTag head implicit 
+   StartTag meta implicit  name="generator" content="HTML Tidy for HTML5 for Windows version 5.9.20"
+   StartTag title  
+    Text   (3) 'Foo'
+  StartTag body implicit 
+   StartTag img   src="abc"
+   StartTag meta   content="key"

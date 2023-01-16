@@ -1018,4 +1018,5 @@ int main(int argc, char** args) {
 * 4. 添加对应平台的msiexec.exe文件，用于卸载程序
 * 5. 添加主程序的快捷方式
 * 6. 在快捷方式上设置图标，图标的标准是：ico格式，尺寸48x48
+* ico: https://redketchup.io/icon-converter
 **/

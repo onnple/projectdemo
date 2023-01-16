@@ -1,6 +1,28 @@
 {
     "data_list": [
         {
+            "link_base_url": "https://www.wusuo8.com/list-28-{paging}.html",
+            "link_paging_tag": "{paging}",
+            "links_xpath": "/html/body/div[1]/div[3]/ul/li/a",
+            "content_title_xpath": "/html/body/div[1]/div[3]/div[2]/h1",
+            "content_cover_xpath": "/html/body/div[1]/div[3]/div[1]/img",
+            "content_price_xpath": "/html/body/div[1]/div[3]/div[2]/ul/li[1]/b[1]/span",
+            "content_views_xpath": "/html/body/div[1]/div[3]/div[2]/ul/li[2]/span/text()",
+            "content_update_time_xpath": "/html/body/div[1]/div[3]/div[2]/ul/li[3]/text()",
+            "content_xpath": "/html/body/div[1]/div[3]/article/p"
+        },
+        {
+            "link_base_url": "https://www.wusuo8.com/index.php?m=content&c=index&a=lists&catid=35&page={paging}",
+            "link_paging_tag": "{paging}",
+            "links_xpath": "/html/body/div[1]/div[3]/ul/li/a", 
+            "content_title_xpath": "/html/body/div[1]/div[3]/div[2]/h1", 
+            "content_cover_xpath": "/html/body/div[1]/div[3]/div[1]/img",
+            "content_price_xpath": "/html/body/div[1]/div[3]/div[2]/ul/li[1]/b[1]/span",
+            "content_views_xpath": "/html/body/div[1]/div[3]/div[2]/ul/li[2]/span/text()",
+            "content_update_time_xpath": "/html/body/div[1]/div[3]/div[2]/ul/li[3]/text()",
+            "content_xpath": "/html/body/div[1]/div[3]/article/p"
+        },
+        {
             "link_base_url": "https://www.wusuo8.com/type/61/",
             "link_paging_tag": "",
             "links_xpath": "/html/body/div[1]/div[3]/ul/li/a", 
